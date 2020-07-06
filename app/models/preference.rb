@@ -1,4 +1,4 @@
-class Preference 
+class Preference < ActiveRecord::Base 
   
   
 end   
