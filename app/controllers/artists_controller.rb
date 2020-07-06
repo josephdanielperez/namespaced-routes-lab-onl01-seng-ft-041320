@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     p = Preference.all.first 
-    if p
+    if p.allow_create_artists == true 
     @artist = Artist.new
   end
 
