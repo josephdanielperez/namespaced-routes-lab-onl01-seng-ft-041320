@@ -25,6 +25,8 @@ class SongsController < ApplicationController
   end
 
   def new
+    p = Preference.all.first
+    
     @song = Song.new
   end
 
